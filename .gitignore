@@ -1,2 +1,18 @@
-.DS_Store
+# Python
 __pycache__/
+*.pyc
+
+# SQLite local DB
+*.sqlite
+*.db
+
+# Alembic cache
+migrations/__pycache__/
+migrations/versions/__pycache__/
+
+# Virtual environments
+venv/
+.venv/
+
+# OS files
+.DS_Store
