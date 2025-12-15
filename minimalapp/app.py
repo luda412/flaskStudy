@@ -31,5 +31,10 @@ def create_app():
         print(f"type is {type(name)}")
         return render_template("index.html", name=name)
 
+    @app.route("/bye/<name>")
+    def say_bye(name):
+        print(f"type is {type(name)}")
+        return render_template("index.html", name=name)
+
     # 반드시 app 반환
     return app
