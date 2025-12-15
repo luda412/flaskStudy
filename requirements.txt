@@ -1,1 +1,3 @@
 flask
+flask-Migrate
+flask-sqlalchemy
