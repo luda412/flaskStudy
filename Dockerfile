@@ -12,6 +12,7 @@ COPY minimalapp ./minimalapp
 # 3) 컨테이너에서 작업 디렉토리를 minimalapp으로 이동
 WORKDIR /app/minimalapp
 
-EXPOSE 5000
+ENV FLASK_RUN_HOST=0.0.0.0
+ENV FLASK_RUN_PORT=5000
 
 CMD ["flask", "run"]
